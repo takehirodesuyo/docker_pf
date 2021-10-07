@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// コントローラーを通さずにviewを表示させている
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/example', [exampleController::class, 'index']);
