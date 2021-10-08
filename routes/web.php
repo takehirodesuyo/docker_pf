@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\DogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +13,18 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// コントローラーを通さずにviewを表示させている
+
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/example', [exampleController::class, 'index']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+// authはlaravelbrezzeで作成これが/skillの場合は、ログインしたユーザーしか表示させないと言う設定
+Route::middleware(['auth'])->prefix('dog')->group(function() {
+    Route::get('/', [DogController::class, 'index'])->name('dog');
+});
+
+require __DIR__.'/auth.php';
