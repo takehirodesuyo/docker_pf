@@ -22,7 +22,7 @@ class Dog extends Model
     const SKILL_STATUS_NAME_RELEARN = '再学習';
     const SKILL_STATUS_NAME_MASTER = 'マスター';
     
-    const SKILL_STATUS_OBJECT = [
+    const DOG_STATUS_OBJECT = [
         self::SKILL_STATUS_NOT_YET  => self::SKILL_STATUS_NAME_NOT_YET,
         self::SKILL_STATUS_LEARNING => self::SKILL_STATUS_NAME_LEARNING,
         self::SKILL_STATUS_LEARNED  => self::SKILL_STATUS_NAME_LEARNED,

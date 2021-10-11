@@ -18,6 +18,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            
                         @foreach($dogs as $dog)
                           <tr>
                             <td class="border px-4 py-2">{{ $dog->id }}</td>
@@ -27,6 +28,9 @@
                         @endforeach
                     </tbody>
                     </table>
+                    <div class="flex justify-center mt-3">
+                        {{ $dogs->links() }}
+                    </div>
                 </div>
             </div>
         </div>

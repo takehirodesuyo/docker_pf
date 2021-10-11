@@ -25,6 +25,7 @@ Route::get('/dashboard', function () {
 // authはlaravelbrezzeで作成これが/skillの場合は、ログインしたユーザーしか表示させないと言う設定
 Route::middleware(['auth'])->prefix('dog')->group(function() {
     Route::get('/', [DogController::class, 'index'])->name('dog');
+    Route::get('/detail/{id}/', [DogController::class, 'detail'])->name('dog.detail');
 });
 
 require __DIR__.'/auth.php';
