@@ -23,7 +23,12 @@
                           <tr>
                             <td class="border px-4 py-2">{{ $dog->id }}</td>
                             <td class="border px-4 py-2">{{ $dog->dog_name }}</td>
-                            <td class="border px-4 py-2">{{ $dog->dog_status }}</td>
+                            <td class="border px-4 py-2">{{ \App\Models\Dog::DOG_STATUS_OBJECT[$dog->dog_status ] }}</td>
+                            <td class="border px-4 py-2">
+                                <button onclick="location.href='/dog/detail/{{ $dog->id }}'" class="shadow bg-gray-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                    詳細ページへ
+                                </button>
+                            </td>
                           </tr>
                         @endforeach
                     </tbody>
