@@ -26,6 +26,10 @@ Route::get('/dashboard', function () {
 Route::middleware(['auth'])->prefix('dog')->group(function() {
     Route::get('/', [DogController::class, 'index'])->name('dog');
     Route::get('/detail/{id}/', [DogController::class, 'detail'])->name('dog.detail');
+    Route::get('/new', [DogController::class, 'new'])->name('dog.new');
+    Route::post('/create', [DogController::class, 'create'])->name('dog.create');
+    // 第二引数の意味調べる->viewのblade.phpのこと
+    // なぜ指定されたURLがlocalhost/dog/なのか->prefixで指定されている。
 });
 
 require __DIR__.'/auth.php';

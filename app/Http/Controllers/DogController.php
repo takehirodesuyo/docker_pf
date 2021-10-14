@@ -25,4 +25,21 @@ class DogController extends Controller
         return view('dog.detail', ['dog' => $dog]);
     }
 
+    public function new()
+    {
+        //テーブルの情報を変数に代入
+        // ペジネーション
+        return view('dog.new');
+    }
+
+    public function create(Request $request)
+    {
+        $skill = new DOG();
+        $skill->dog_name = $request->input('dog_name');
+        $skill->dog_status = $request->input('dog_status');
+        $skill->save();
+
+        return redirect('dog');
+    }
+
 }
