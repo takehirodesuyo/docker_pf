@@ -31,6 +31,7 @@ Route::middleware(['auth'])->prefix('dog')->group(function() {
     // 第二引数の意味調べる->viewのblade.phpのこと
     // なぜ指定されたURLがlocalhost/dog/なのか->prefixで指定されている。
     //vue追加した
+    //新規ルーティングを作成
 });
 
 
