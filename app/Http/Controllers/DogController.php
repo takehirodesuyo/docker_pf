@@ -39,7 +39,8 @@ class DogController extends Controller
         $skill->dog_status = $request->input('dog_status');
         $skill->save();
 
-        return redirect('dog');
+        return redirect('dog')->with('status', 'スキルを作成しました');
+        // ここの第一引数はindex.blade.phpのセッションにはいる
     }
 
 }
