@@ -13,6 +13,10 @@
                     template
 
 
+                    <?php
+                      
+                    ?>
+
                     @if ($str === 1)
                     こんばんわ
                     @endif
