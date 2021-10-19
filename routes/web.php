@@ -27,7 +27,16 @@ Route::get('/dashboard', function () {
 // middleware(['auth'])はログインしていたらの場合
 Route::middleware(['auth'])->prefix('usually')->group(function(){
     Route::get('/', [UsuallyController::class, 'index'])->name('usually');
+    //これはコントローラーを通さずに表示させるviewとなっている
+    Route::view('/view', 'usually.index');
+    // templateというメソッドが呼ばれる(controllerから)
+    Route::get('/template', [UsuallyController::class, 'template'])->name('template');
+
+    Route::redirect('/redirect', '/usually/view');
 });
+
+
+
 
 
 

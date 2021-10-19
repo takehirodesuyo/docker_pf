@@ -66,5 +66,7 @@ class DogController extends Controller
         return redirect('dog')->with('status', 'スキルを削除しました');
     }
 
+   
+
 
 }

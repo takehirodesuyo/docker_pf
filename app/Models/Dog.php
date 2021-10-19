@@ -16,11 +16,11 @@ class Dog extends Model
     const SKILL_STATUS_RELEARN = 4;
     const SKILL_STATUS_MASTER = 5;
     
-    const SKILL_STATUS_NAME_NOT_YET = '未学習';
-    const SKILL_STATUS_NAME_LEARNING = '学習中';
-    const SKILL_STATUS_NAME_LEARNED = '学習済';
-    const SKILL_STATUS_NAME_RELEARN = '再学習';
-    const SKILL_STATUS_NAME_MASTER = 'マスター';
+    const SKILL_STATUS_NAME_NOT_YET = '全く追い込めなかった';
+    const SKILL_STATUS_NAME_LEARNING = '少し追い込めた';
+    const SKILL_STATUS_NAME_LEARNED = 'いい感じ';
+    const SKILL_STATUS_NAME_RELEARN = 'バチバチ';
+    const SKILL_STATUS_NAME_MASTER = 'マッチョ';
     
     const DOG_STATUS_OBJECT = [
         self::SKILL_STATUS_NOT_YET  => self::SKILL_STATUS_NAME_NOT_YET,
