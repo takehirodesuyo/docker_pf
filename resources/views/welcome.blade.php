@@ -31,7 +31,7 @@
     </div>
         
 
-            <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            <!-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -44,7 +44,7 @@
                         @endif
                     @endauth
             </div>
-            @endif
+            @endif -->
 
 
 
@@ -78,7 +78,7 @@
  
    
  
-    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1327&q=80">
+    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="../../storage/app/public/images/DSC_2048-1024x683.jpg" alt="logo">
      <hr>
 
     <div class="max-w-md w-full space-y-8">
@@ -89,8 +89,8 @@
             筋トレメニュー<br>記録アプリ
         </h2>
         
-      </div>
-      <form class="mt-8 space-y-6" action="#" method="POST">
+    </div>
+      <!-- <form class="mt-8 space-y-6" action="#" method="POST"> -->
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
@@ -137,6 +137,8 @@
           </button>
         </div>
 
+
+
         <div>
           <button id="signin" type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-50" aria-required="true">
             <span class="absolute left-0 inset-y-0 flex items-center pl-3">
@@ -163,7 +165,7 @@
 
 
 
-      </form>
+      <!-- </form> -->
     </div>
   </div>
 

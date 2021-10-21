@@ -21,4 +21,13 @@ class UsuallyController extends Controller
         return view('usually.template', ['str' => $str, 'skills' => $skills]);
         // ここの'str'ってなんなんだ->bladeに渡したときの$strとなる
     }
+
+    public function command ()
+    {
+        //migratiosnファイルを作成する
+        // php artisan make:migration create_flights_table
+        //テーブルのカラムを変更する
+        // php artisan make::migration add_dogs_remarks_table --table=skills
+    }
+
 }

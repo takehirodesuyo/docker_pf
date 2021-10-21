@@ -25,6 +25,8 @@
                       <p>ID: {{ $skill->id }}</p>
                     @endforeach
 
+                    
+
 
                 </div>
             </div>
