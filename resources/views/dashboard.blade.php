@@ -21,7 +21,7 @@
             background-attachment: cover;
             background-position: center;"></div>
 			<div class="flex flex-col items-start mt-4">
-				<h4 class="text-xl font-semibold">Heading</h4>
+				<h4 class="text-xl font-semibold">マッスル北村</h4>
 				<p class="text-sm">Some text about the thing that goes over a few lines.</p>
 				<a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
 			</div>
@@ -34,7 +34,7 @@
             background-attachment: cover;
             background-position: center;"></div>
 			<div class="flex flex-col items-start mt-4">
-				<h4 class="text-xl font-semibold">Heading</h4>
+				<h4 class="text-xl font-semibold">カネキン</h4>
 				<p class="text-sm">Some text about the thing that goes over a few lines.</p>
 				<a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
 			</div>
@@ -47,7 +47,7 @@
             background-attachment: cover;
             background-position: center;"></div>
 			<div class="flex flex-col items-start mt-4">
-				<h4 class="text-xl font-semibold">Heading</h4>
+				<h4 class="text-xl font-semibold">Jin</h4>
 				<p class="text-sm">Some text about the thing that goes over a few lines.</p>
 				<a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
 			</div>
@@ -60,7 +60,7 @@
             background-attachment: cover;
             background-position: center;"></div>
 			<div class="flex flex-col items-start mt-4">
-				<h4 class="text-xl font-semibold">Heading</h4>
+				<h4 class="text-xl font-semibold">山岸</h4>
 				<p class="text-sm">Some text about the thing that goes over a few lines.</p>
 				<a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
 			</div>

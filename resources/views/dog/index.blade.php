@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            スキル
+            トレーニングメニュー
         </h2>
     </x-slot>
     
@@ -18,11 +18,11 @@
                     <table class="table-auto">
                         <thead>
                             <tr>
-                            <th class="px-4 py-2">Title</th>
-                            <th class="px-4 py-2">Author</th>
-                            <th class="px-4 py-2">Views</th>
-                            <th class="px-4 py-2">経験年数</th>
-                            <th class="px-4 py-2">特記事項</th>
+                            <th class="px-4 py-2">ジム回数</th>
+                            <th class="px-4 py-2">部位</th>
+                            <th class="px-4 py-2">追い込めたか</th>
+                            <th class="px-4 py-2">体重[kg]</th>
+                            <th class="px-4 py-2">今日のトレーニングの感想</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,7 +33,7 @@
                             <td class="border px-4 py-2">{{ $dog->dog_name }}</td>
                             <td class="border px-4 py-2">{{ \App\Models\Dog::DOG_STATUS_OBJECT[$dog->dog_status ] }}</td>
                             <td class="border px-4 py-2">{{ $dog->experience_year }}</td>
-                            <td class="border px-4 py-2">{{ $dog->remarks }}</td>
+                            <td class="border px-4 py-2"><a href="//dog/detail/{{ $dog->id }}">{{ Str::limit($dog->remarks, 20, $end='....') }}</a></td>
                             <td class="border px-4 py-2">
                             <td class="border px-4 py-2">
                                 <button onclick="location.href='/dog/detail/{{ $dog->id }}'" class="shadow bg-gray-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">

@@ -16,7 +16,7 @@ class AddDogsRemarksTable extends Migration
         Schema::table('dogs', function (Blueprint $table) {
             //
             $table->text('remarks')->comment('特記事項')->after('dog_status')->nullable();
-            $table->integer( 'experience_year')->comment('経験年数')->after('remarks')->nullable();
+            $table->string( 'experience_year')->comment('経験年数')->after('remarks')->nullable();
         });
     }
 

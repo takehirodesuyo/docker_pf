@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Dog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
 
 
@@ -14,6 +15,8 @@ class DogController extends Controller
     {
         //テーブルの情報を変数に代入
         // ペジネーション
+        //文字数の指定
+        // $dogs = Dog::select('*', DB::raw('LEFT(remarks, 20) as remarks'))->paginate(15);
         $dogs = Dog::paginate(15);
         return view('dog.index', ['dogs' => $dogs]);
         //ここわからん
@@ -37,6 +40,8 @@ class DogController extends Controller
         $skill = new DOG();
         $skill->dog_name = $request->input('dog_name');
         $skill->dog_status = $request->input('dog_status');
+        $skill->remarks = $request->input('remarks');
+        $skill->experience_year = $request->input('experience_year');
         $skill->save();
 
         return redirect('dog')->with('status', 'スキルを作成しました');
@@ -54,6 +59,8 @@ class DogController extends Controller
         $skill = Dog::find($request->input('id'));
         $skill->dog_name = $request->input('dog_name');
         $skill->dog_status = $request->input('dog_status');
+        $skill->remarks = $request->input('remarks');
+        $skill->experience_year = $request->input('experience_year');
         $skill->save();
 
         return redirect('dog')->with('status', 'スキルを更新しました');

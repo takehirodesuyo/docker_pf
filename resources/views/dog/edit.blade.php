@@ -10,14 +10,14 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200 flex justify-center">
 
-                <form class="w-full max-w-sm" action="/dog/update" method="POST">
+                <form class="w-full max-w-lg" action="/dog/update" method="POST">
                     @csrf
                     @method('PATCH')
                     <input  value="{{ $dog->id }}" required name="id" type="hidden">
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">
-                                ID
+                                筋トレ回数
                             </label>
                         </div>
                         <div class="md:w-2/3">
@@ -27,7 +27,7 @@
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">
-                                スキル名
+                                部位
                             </label>
                         </div>
                         <div class="md:w-2/3">
@@ -38,7 +38,7 @@
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-password">
-                            ステータス
+                            追い込めたか
                         </label>
                         </div>
                         <div class="md:w-2/3">
@@ -49,6 +49,30 @@
                           </select>
                         </div>
                     </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/3">
+                            <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="experience_year">
+                                体重[kg]
+                            </label>
+                        </div>
+                        <div class="md:w-2/3">
+                          <input  value="{{ $dog->experience_year }}" required name="experience_year" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="experience_year" type="text">
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/3">
+                            <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="remarks">
+                                今日の感想
+                            </label>
+                        </div>
+                        <div class="md:w-2/3">
+                          <textarea name="remarks" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="remarks" cols="30" rows="10">{{ $dog->remarks }}</textarea>
+                        </div>
+                    </div>
+
+                    
                     
                     <div class="md:flex md:items-center">
                         <div class="md:w-2/3">
