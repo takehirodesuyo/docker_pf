@@ -78,9 +78,8 @@
  
    
  
-    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt="logo">
+    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="{{ asset('img/IMG_2359.jpg') }}" alt="logo">
      <hr>
-
     <div class="max-w-md w-full space-y-8">
         
       <div>
