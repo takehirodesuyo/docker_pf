@@ -85,7 +85,7 @@
       <div>
 
         <h2 class="mt-6 text-center text-3xl font-bold text-gray-900">
-            筋トレメニュ<br>記録アプリ
+            筋トレメニュ<br>記録
         </h2>
         
     </div>
