@@ -78,7 +78,7 @@
  
    
  
-    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="{{ asset('img/IMG_2359.jpg') }}" alt="logo">
+    <img  style="border:20px;margin:50px;float:left;width:500px;height: 500px;" class="object-cover" src="{{ asset('img/main_picture.jpg') }}" alt="logo">
      <hr>
     <div class="max-w-md w-full space-y-8">
         
