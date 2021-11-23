@@ -20,7 +20,7 @@
             background-attachment: cover;
             background-position: center;"
 			></div> -->
-			<img src="{{ asset('img/sub_1.jpeg') }}" alt="マッスル北村">
+			<img src="{{ asset('img/sub_1 (2).jpeg') }}" alt="マッスル北村">
 
 			<div class="flex flex-col items-start mt-4">
 				<h4 class="text-xl font-semibold">マッスル北村</h4>
@@ -64,7 +64,7 @@
             ackground-repeat: no-repeat;
             background-attachment: cover;
             background-position: center;"></div> -->
-			<img src="{{ asset('img/sub_4.jpg') }}" alt="Jin">
+			<img src="{{ asset('img/sub_5.jpg') }}" alt="山岸">
 			<div class="flex flex-col items-start mt-4">
 				<h4 class="text-xl font-semibold">山岸</h4>
 				<p class="text-sm">「ボディビル世界チャンピオンが伝授する 筋トレは人生を変える哲学だ」という本を出版している。アーノルド・シュワルツェネッガーが主催する「IFBBアーノルド・クラシック212」に日本人で初めて優勝</p>
